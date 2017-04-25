@@ -1,5 +1,0 @@
-print ("Please fill in the blanks below: ")
-print ("(name)'s favorite subject in school is (subject)")
-name = input("What is your name?: ")
-subject = input("What is your favorite subject: ")
-print ("{}'s favorite subject in school is {}".format(name,subject))
