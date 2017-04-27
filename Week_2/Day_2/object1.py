@@ -1,10 +1,10 @@
 class Person:
+	greeting_count = 0
     def __init__(self, name, email, phone,friends):
         self.name = name
         self.email = email
         self.phone = phone
         self.friends = friends
-        self.greeting_count = 0
     def greet(self, other_person):
         print ('Hello {}, I am {}!'.format(other_person.name, self.name))
         self.greeting_count = self.greeting_count+1
@@ -14,8 +14,6 @@ class Person:
     	self.friends.append(friend)
     def num_friends(self):
     	print(len(self.friends))
-    def num_unique_people_greeted(self):
-    	print(self.friends)
  
     def __str__(self):
     	return 'Person:{} {} {}'.format(self.name, self.email, self.phone)
@@ -29,5 +27,4 @@ jordan.greet(sonny)
 sonny.print_contact_info()
 jordan.add_friends(sonny)
 jordan.num_friends()
-jordan.num_unique_people_greeted()
 print(sonny)
